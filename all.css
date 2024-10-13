@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffeef0;
+    color: #333;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ff7f91;
+}
+
+.line{
+    color: #ff7f91;
+    text-decoration: none;
+}
+
+/* Course Section */
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.course-card {
+    background-color: #ffeef0;
+    border: 2px solid #ff7f91;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #ff7f91;
+}
+
+.course-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff7f91;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ff4d6d;
+}
+
+.course-card h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #ff4d6d;
+}
+.course-card p {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    color: #ff7f91;
+}
+.course-card strong {
+    font-weight: bold;
+    color: #ff4d6d;
+}
+
+/* Calendar Section */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.day {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ff7f91;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.calendar-grid .day:nth-child(odd) {
+    background-color: #fddde5;
+}
+
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.activity-table th,
+.activity-table td {
+    border: 2px solid #ff7f91;
+    padding: 15px;
+    text-align: center;
+    color: #ff7f91;
+    font-weight: bold;
+}
+
+.activity-table th {
+    background-color: #ffeef0;
+}
+
+.activity-table td {
+    background-color: #fff;
+}
+
+.activity-table tbody tr:nth-child(even) td {
+    background-color: #fddde5;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .calendar-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        width: 100%;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-table {
+        font-size: 14px;
+    }
+
+    .calendar-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

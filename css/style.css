@@ -1,0 +1,425 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgba(249, 132, 152, 0.5); 
+    padding: 20px; 
+    border-radius: 10px; 
+    text-align: left; 
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF;
+    color: #F98498; 
+    opacity: 100%;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left .logo {
+    height: 90px;
+}
+
+.navbar-center {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    color: #F98498; 
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.notification-icon {
+    font-size: 22px;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: rgba(249, 132, 152, 0.15);
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.welcome-section h1 {
+    font-size: 28px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+}
+
+/* Status Section */
+
+.status {
+    margin: 20px 0; 
+    text-align: center; 
+}
+
+.status h2 {
+    text-align: left; 
+    margin: 0; 
+    padding: 0; 
+    font-size: 24px; 
+}
+
+.status-box {
+    background-color: #FFF; 
+    border: 2px solid #F98498; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-top: 15px; 
+    color: #F98498; 
+    text-align: justify;
+    display: flex; 
+    align-items: center;
+}
+
+.status-text {
+    flex-grow: 1; 
+    margin: 0 10px; 
+}
+
+.status-icon {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+}
+
+
+.status-box p {
+    margin-bottom: 15px; 
+}
+
+.status-section {
+    background-color: rgba(249, 132, 152, 0.15);
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.status-section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.status-content {
+    font-size: 16px;
+}
+
+.subscribe-btn {
+    padding: 10px 20px; 
+    background-color: #F98498; 
+    color: #FFF; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+    margin-bottom: 15px; 
+}
+
+/* Change button background on hover */
+.subscribe-btn:hover {
+    background-color: #F98498; 
+    color: FFF;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #F98498;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.search-btn {
+    background-color: #F98498;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 0; 
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 2px solid #F98498; 
+    border-radius: 5px 0 0 5px;
+    font-size: 16px; 
+    width: 300px; 
+}
+
+.search-bar button {
+    padding: 10px 20px; 
+    background-color: #F98498; 
+    color: #FFF; 
+    border: none; 
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+/* Change button background on hover */
+.search-bar button:hover {
+    background-color: #F98498;
+}
+
+/* My Course Section */
+.my-course-section {
+    margin: 30px 0;
+}
+
+.course-card {
+    display: flex;
+    background-color: rgba(249, 132, 152, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    max-width: 600px;  
+    margin-left: 30px;  
+}
+
+.course-image {
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.course-details {
+    flex-grow: 1;
+}
+
+.course-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.course-details p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: rgba(249, 132, 152, 0.5);
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.progress {
+    background-color: #F98498; 
+    height: 100%;
+    border-radius: 5px;
+}
+
+.progress-text {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Assignment Container */
+.assignment-container {
+    background-color: #FFF; 
+    padding: 20px; 
+    border: 2px solid #F98498; 
+    border-radius: 10px;
+    margin: 20px 0; 
+}
+
+/* Assignment Section */
+.assignment-section {
+    margin: 30px 0;
+}
+
+.assignment-category {
+    margin-bottom: 20px;
+}
+
+.assignment-category h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.assignment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.assignment-item .status {
+    margin-right: 15px; 
+}
+
+.assignment-item p {
+    font-size: 16px;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.late {
+    background-color: #F98498; 
+}
+
+.on-time {
+    background-color: #F98498; 
+}
+
+.not-yet {
+    background-color: #F98498; 
+}
+
+/* Rounded Box for Homework User Research, Exam User Research, and Homework Layouting UI */
+.rounded-box {
+    background-color: #FFF; 
+    padding: 15px; 
+    border: 1px solid #F98498; 
+    margin-bottom: 10px; 
+    border-radius: 10px; 
+}
+
+.view-answer-btn, .submit-btn {
+    background-color: #F98498; 
+    color: #FFF;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+/* My Course Section */
+.my-course-section {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+/* Assignment Section */
+.assignment-section {
+    flex: 1;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-center {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar-right {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+  /* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar-center {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .navbar-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile-name {
+        font-size: 14px;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    .notification-icon {
+        font-size: 18px;
+    }
+}
+}

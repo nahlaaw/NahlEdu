@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="css/course.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="image/logo.png" alt="Logo NahlEdu" class="logo">
+        </div>
+        <div class="navbar-center">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="course.html" class="nav-item">Course</a>
+            <a href="assigment.html" class="nav-item">Assignment</a>
+        </div>
+        <div class="navbar-right">
+            <img src="image/bel.png" alt="Notification Icon" class="notification-icon" style="width: 70px;">
+            <h2 class="profile-name">Nacila Putri Angelina</h2>
+            <a href="profile.html">
+                <img src="image/pin.jpeg" alt="Profile" class="profile-image">
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <div class="course-container">
+            <div class="course-list-header">
+                <h2>Course List</h2>
+            </div>
+            <ul class="course-status">
+                <li><a href="#">Enrolled</a></li>
+                <li><a href="#">Completed</a></li>
+            </ul>
+            <div class="course-filter">
+                <select>
+                    <option value="all">All Category</option>
+                </select>
+                <select>
+                    <option value="date">Date</option>
+                </select>
+            </div>
+            <div class="course-card">
+                <div class="course-image-container">
+                    <img class="course-image" src="image/uiux.png" alt="Course Image" style="width: 300px;">
+                    <div class="course-details">
+                        <h3>Pelatihan UI/UX Designer</h3>
+                        <div class="profile-pic-container">
+                            <img src="image/gege.jpeg" alt="Profile Picture" class="profile-pic" style="width: 70px;">
+                        </div>
+                        <p><b>Ghefira Salma Tsurayya</b></p>
+                        <p>Master Trainer NahlEdu</p>
+                        <p><b>10 Oktober 2024 | 08.00 - 13.00 WIB</b></p> 
+                        <p><b>Sesi Zoom Meeting | GRATIS</b></p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                        <div class="progress-text"><b>Selesai 95%</b></div>
+                    </div>
+                    <button onclick="window.location.href='lihatkelas.html';"><b>Lihat Kelas</b></button>
+                </div>
+
+            </div>
+        </div>
+            <div class="pagination">
+                <a href="#" class="pagination-arrow">&lt;</a>
+                <a href="#" class="pagination-number active">1</a>
+                <a href="#" class="pagination-arrow">&gt;</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

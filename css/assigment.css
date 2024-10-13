@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdf0f7;
+    color: #F98498;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left .logo {
+    height: 90px;
+}
+
+.navbar-center {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    color: #F98498; 
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    color: #F98498;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.notification-icon {
+    font-size: 22px;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Assignment Header */
+.assignment-header {
+    display: flex;
+    justify-content: column;
+    padding: 20px;
+    background-color: #FFD2E4;
+    margin-bottom: 20px;
+}
+
+/* Menyusun tabs ke kiri */
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+/* Pencarian di tengah */
+.search-bar {
+    width: 100%;
+    justify-content: flex-start; 
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid #F98498;
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+
+.tab {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FFE6F0;
+    color: #F98498;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #F98498;
+    color: #FFE6F0;
+}
+
+/* Assignment Cards */
+.assignment-container {
+    padding: 20px;
+}
+
+.assignment-card {
+    display: flex;
+    flex-direction: column; /* Mengatur item menjadi kolom */
+    background-color: #FFE6F0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.assignment-header {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px;
+    background-color: #FFD1E4;
+    margin-bottom: 20px;
+}
+
+.assignment-header h3 {
+    font-size: 20px;
+    color: #F98498;
+}
+
+.due-date {
+    font-size: 14px;
+    color: #F98498;
+}
+
+.assignment-card p {
+    font-size: 16px;
+    color: #F98498;
+    margin-bottom: 15px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #F98498;
+    color: #FFF;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto; 
+    align-self: center; 
+}
+
+.assignment-card h2 {
+    color: #F98498; 
+}
+
+.submit-btn:hover {
+    background-color: #F98498;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-center {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar-right {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+  /* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar-center {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .navbar-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile-name {
+        font-size: 14px;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    .notification-icon {
+        font-size: 18px;
+    }
+}
+}
